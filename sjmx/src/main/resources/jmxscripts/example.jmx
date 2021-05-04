@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.1.1 r1855137">
+  <org.apache.jorphan.collections.HashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="6666666666666">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="[res_key=user_defined_variables]" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <org.apache.jorphan.collections.HashTree/>
+    <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="nihao">
+      <intProp name="ThreadGroup.num_threads">1</intProp>
+      <intProp name="ThreadGroup.ramp_time">1</intProp>
+      <longProp name="ThreadGroup.duration">10</longProp>
+      <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController">
+        <boolProp name="LoopController.continue_forever">false</boolProp>
+        <intProp name="LoopController.loops">1</intProp>
+      </elementProp>
+    </ThreadGroup>
+    <org.apache.jorphan.collections.HashTree>
+      <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Open qq.com">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.protocol">https</stringProp>
+        <stringProp name="HTTPSampler.domain">www.baidu.com</stringProp>
+        <intProp name="HTTPSampler.port">80</intProp>
+        <stringProp name="HTTPSampler.path">/</stringProp>
+        <stringProp name="HTTPSampler.method">GET</stringProp>
+      </HTTPSamplerProxy>
+      <org.apache.jorphan.collections.HashTree>
+        <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="6666" enabled="true">
+          <stringProp name="TestPlan.comments">123</stringProp>
+          <intProp name="calcMode">2</intProp>
+          <intProp name="throughput">60</intProp>
+        </ConstantThroughputTimer>
+        <org.apache.jorphan.collections.HashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="userid">
+          <stringProp name="filename">filepath</stringProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="fileEncoding">utf-8</stringProp>
+          <stringProp name="variableNames">userid</stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <stringProp name="delimiter">!!!!!!!!!</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.al</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+        </CSVDataSet>
+        <org.apache.jorphan.collections.HashTree/>
+        <BackendListener guiclass="BackendListenerGui" testclass="BackendListener" testname="test" enabled="true">
+          <elementProp name="arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="useRegexpForSamplersList" elementType="Argument">
+                <stringProp name="Argument.name">useRegexpForSamplersList</stringProp>
+                <stringProp name="Argument.value">falseasdasd</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </BackendListener>
+        <org.apache.jorphan.collections.HashTree/>
+      </org.apache.jorphan.collections.HashTree>
+    </org.apache.jorphan.collections.HashTree>
+  </org.apache.jorphan.collections.HashTree>
+</jmeterTestPlan>

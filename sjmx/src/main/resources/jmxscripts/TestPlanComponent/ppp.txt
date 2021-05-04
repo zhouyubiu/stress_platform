@@ -1,0 +1,9 @@
+Creating summariser <summary>
+Created the tree successfully using /Users/zhouyu/Desktop/study/sjmx/src/main/resources/jmxscripts/TestPlanComponent/ppp.jmx
+Starting the test @ Fri Dec 25 11:33:30 CST 2020 (1608867210504)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +      1 in 00:00:00 =    2.0/s Avg:   363 Min:   363 Max:   363 Err:     1 (100.00%) Active: 1 Started: 1 Finished: 0
+summary +    249 in 00:00:29 =    8.7/s Avg:   115 Min:   102 Max:   799 Err:   249 (100.00%) Active: 1 Started: 1 Finished: 0
+summary =    250 in 00:00:29 =    8.5/s Avg:   116 Min:   102 Max:   799 Err:   250 (100.00%)
+summary +    270 in 00:00:30 =    9.0/s Avg:   110 Min:   104 Max:   125 Err:   270 (100.00%) Active: 1 Started: 1 Finished: 0
+summary =    520 in 00:00:59 =    8.8/s Avg:   113 Min:   102 Max:   799 Err:   520 (100.00%)

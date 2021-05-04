@@ -1,0 +1,7 @@
+jmeter:
+  path: /Users/zhouyu/Downloads/apache-jmeter-5.1.1/bin/jmeter.sh
+  scripts-root-dir: /Users/zhouyu/Desktop/study/sjmx/src/main/resources/jmxscripts
+
+
+shell:
+  shell-scripts-dir-path: /Users/zhouyu/Desktop/study/sjmx/src/main/resources/shellScripts
